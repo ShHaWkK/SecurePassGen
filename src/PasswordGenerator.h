@@ -1,0 +1,14 @@
+//
+// Created by ShHawk on 29/01/2024.
+//
+
+#ifndef SECUREPASSGEN_PASSWORDGENERATOR_H
+#define SECUREPASSGEN_PASSWORDGENERATOR_H
+
+
+class PasswordGenerator {
+
+};
+
+
+#endif //SECUREPASSGEN_PASSWORDGENERATOR_H
