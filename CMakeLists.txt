@@ -3,4 +3,11 @@ project(SecurePassGen)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SecurePassGen main.cpp)
+add_executable(SecurePassGen
+        src/main.cpp
+        src/PasswordGenerator.cpp
+        src/CharacterPool.cpp
+        src/CharacterPool.cpp
+
+        src/CharacterPool.h
+        src/PasswordGenerator.h)
