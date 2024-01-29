@@ -11,10 +11,17 @@
 class CharacterPool {
 public:
     CharacterPool();
-    std::vector<char> getCharacters() const;
+
+    std::vector<char> getLetters() const;
+    std::vector<char> getDigits() const;
+    std::vector<char> getSymbols() const;
+
 private:
-    std::vector<char> characters;
+    std::vector<char> letters;
+    std::vector<char> digits;
+    std::vector<char> symbols;
 };
+
 
 #endif //CHARACTERPOOL_H
 
