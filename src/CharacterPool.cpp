@@ -3,3 +3,11 @@
 //
 
 #include "CharacterPool.h"
+
+
+CharacterPool::CharacterPool() {
+}
+
+std::vector<char> CharacterPool::getCharacters() const {
+    return characters;
+}
