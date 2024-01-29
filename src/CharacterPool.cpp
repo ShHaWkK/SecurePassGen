@@ -6,7 +6,6 @@
 
 
 CharacterPool::CharacterPool() {
-    // Initialisation avec un ensemble standard de caractères
     for (char c = '0'; c <= '9'; ++c) characters.push_back(c);
     for (char c = 'A'; c <= 'Z'; ++c) characters.push_back(c);
     for (char c = 'a'; c <= 'z'; ++c) characters.push_back(c);
