@@ -4,9 +4,6 @@
 
 #include "CharacterPool.h"
 
-
-
-
 CharacterPool::CharacterPool() {
     for (char c = 'a'; c <= 'z'; ++c) letters.push_back(c);
     for (char c = 'A'; c <= 'Z'; ++c) letters.push_back(c);

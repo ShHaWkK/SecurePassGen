@@ -3,7 +3,6 @@
 #include <fstream>
 
 PasswordGenerator::PasswordGenerator() : gen(rd()) {
-    // Configuration initiale si nécessaire
 }
 
 char PasswordGenerator::getRandomChar(const std::vector<char>& chars) {
