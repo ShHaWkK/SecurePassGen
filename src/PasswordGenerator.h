@@ -6,8 +6,11 @@
 #ifndef PASSWORDGENERATOR_H
 #define PASSWORDGENERATOR_H
 
-#include <string>
 #include "CharacterPool.h"
+#include <algorithm>
+#include <string>
+#include <iterator>
+#include <vector>
 #include <random>
 
 class PasswordGenerator {
