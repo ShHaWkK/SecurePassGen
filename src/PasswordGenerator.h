@@ -14,6 +14,7 @@ class PasswordGenerator {
 public:
     PasswordGenerator();
     std::string generate(int length, int minLetters = 0, int minDigits = 0, int minSymbols = 0);
+    std::vector<std::string> generateMultiple(int numberOfPasswords, int length, int minLetters, int minDigits, int minSymbols);
 
 private:
     CharacterPool characterPool;

@@ -32,5 +32,13 @@ std::string PasswordGenerator::generate(int length, int minLetters, int minDigit
     // Mélanger le mot de passe pour éviter les modèles prévisibles
     std::shuffle(password.begin(), password.end(), gen);
 
-    return password;
+    std::vector<std::string> PasswordGenerator::generateMultiple(int numberOfPasswords, int length, int minLetters, int minDigits, int minSymbols)
+    {
+        std::vector<std::string> passwords;
+        for (int i = 0; i < numberOfPasswords; ++i) {
+            passwords.push_back(generate(length, minLetters, minDigits, minSymbols));
+        }
+        return passwords;
+    }
+    
 }
