@@ -8,6 +8,7 @@
 
 #include <string>
 #include "CharacterPool.h"
+#include <random>
 
 class PasswordGenerator {
 public:
