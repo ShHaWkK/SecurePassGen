@@ -2,7 +2,7 @@
 #include "PasswordGenerator.h"
 #include <algorithm>
 #include <iterator>
-
+#include <vector>
 
 PasswordGenerator::PasswordGenerator() : gen(rd()) {
     // Configuration initiale si nécessaire
