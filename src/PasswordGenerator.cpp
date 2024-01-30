@@ -37,3 +37,13 @@ std::vector<std::string> PasswordGenerator::generateMultiple(int numberOfPasswor
     }
     return passwords;
 }
+void PasswordGenerator::savePasswordsToFile(const std::vector<std::string>& passwords, const std::string& filename) {
+    std::ofstream file(filename, std::ios::app);
+    if (file.is_open()) {
+        for (const auto& password : passwords) {
+            file << password << std::endl;
+        }
+        file.close();
+    } else {
+    }
+}
