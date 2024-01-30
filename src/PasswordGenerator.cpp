@@ -1,6 +1,6 @@
 // src/PasswordGenerator.cpp
 #include "PasswordGenerator.h"
-
+#include <fstream>
 
 PasswordGenerator::PasswordGenerator() : gen(rd()) {
     // Configuration initiale si nécessaire
