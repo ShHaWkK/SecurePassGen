@@ -1,6 +1,7 @@
 // src/PasswordGenerator.cpp
 #include "PasswordGenerator.h"
-#include <random>
+#include <algorithm>
+#include <iterator>
 
 
 PasswordGenerator::PasswordGenerator() : gen(rd()) {
