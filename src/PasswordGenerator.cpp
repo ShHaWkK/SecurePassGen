@@ -55,3 +55,16 @@ bool PasswordGenerator::isValid(const std::string& password, int minLetters, int
     }
     return countLetters >= minLetters && countDigits >= minDigits && countSymbols >= minSymbols;
 }
+
+
+void PasswordGenerator::setMinLetters(int count) {
+    minLetters = count;
+}
+
+void PasswordGenerator::setMinDigits(int count) {
+    minDigits = count;
+}
+
+void PasswordGenerator::setMinSymbols(int count) {
+    minSymbols = count;
+}
