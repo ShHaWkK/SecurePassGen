@@ -46,3 +46,12 @@ void PasswordGenerator::savePasswordsToFile(const std::vector<std::string>& pass
     } else {
     }
 }
+bool PasswordGenerator::isValid(const std::string& password, int minLetters, int minDigits, int minSymbols) {
+    int countLetters = 0, countDigits = 0, countSymbols = 0;
+    for (char c : password) {
+        if (std::isalpha(c)) ++countLetters;
+        else if (std::isdigit(c)) ++countDigits;
+        else ++countSymbols;
+    }
+    return countLetters >= minLetters && countDigits >= minDigits && countSymbols >= minSymbols;
+}
