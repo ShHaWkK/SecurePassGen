@@ -10,4 +10,5 @@ add_executable(SecurePassGen
         src/CharacterPool.cpp
 
         src/CharacterPool.h
+        src/mainwindow.h
         src/PasswordGenerator.h)
