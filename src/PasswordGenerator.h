@@ -19,6 +19,7 @@ public:
     std::string generate(int length, int minLetters = 0, int minDigits = 0, int minSymbols = 0);
     std::vector<std::string> generateMultiple(int numberOfPasswords, int length, int minLetters, int minDigits, int minSymbols);
     void savePasswordsToFile(const std::vector<std::string>& passwords, const std::string& filename);
+    bool isValid(const std::string& password, int minLetters, int minDigits, int minSymbols);
 private:
     CharacterPool characterPool;
     std::random_device rd;
