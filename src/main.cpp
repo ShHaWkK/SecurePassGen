@@ -10,11 +10,10 @@ int main() {
     std::cin >> numberOfPasswords;
     std::cout << "Enter the length of each password: ";
     std::cin >> length;
-    // Demandez minLetters, minDigits, minSymbols de la même manière
+
 
     auto passwords = passwordGenerator.generateMultiple(numberOfPasswords, length, minLetters, minDigits, minSymbols);
 
-    // Optionnellement, demandez si l'utilisateur veut sauvegarder les mots de passe
     std::string saveOption;
     std::cout << "Do you want to save the passwords to a file? (yes/no): ";
     std::cin >> saveOption;
