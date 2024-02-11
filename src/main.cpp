@@ -24,7 +24,7 @@ int main() {
         passwordGenerator.savePasswordsToFile(passwords, filename);
     }
 
-    // Affichez les mots de passe générés
+    
     for (const auto& password : passwords) {
         std::cout << password << std::endl;
     }
